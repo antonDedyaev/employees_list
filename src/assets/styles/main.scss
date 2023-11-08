@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './base.scss';
+
+#app {
+  max-width: 1280px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  font-weight: normal;
+}

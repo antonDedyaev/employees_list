@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Rubik', ' Arial', sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+
+  background: $main;
+}
+
+button {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
