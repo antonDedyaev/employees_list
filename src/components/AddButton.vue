@@ -20,8 +20,6 @@ export default {};
   line-height: 130%;
   color: $blue;
 
-  cursor: pointer;
-
   border-radius: 50%;
 
   box-shadow: 0 0 8px 1px $teal;
