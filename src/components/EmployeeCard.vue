@@ -63,18 +63,12 @@ export default {
 
   &__entry,
   &__controls {
-    width: 180px;
-
     display: flex;
 
     gap: 10px;
 
     font-size: 18px;
     line-height: 130%;
-
-    &:nth-child(5) {
-      width: 290px;
-    }
 
     &:last-child {
       justify-content: center;
@@ -92,6 +86,100 @@ export default {
     img {
       width: 25px;
       height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .card-wrapper {
+    display: block;
+
+    &__entry,
+    &__controls {
+      width: 300px;
+      display: block;
+
+      position: relative;
+      margin-top: 15px;
+      padding-left: 35%;
+
+      font-size: 18px;
+
+      border-bottom: 1px solid $dark;
+
+      &:last-child {
+        margin-top: 8px;
+        border-bottom: none;
+        padding-left: 43%;
+      }
+
+      &:before {
+        position: absolute;
+
+        left: 6px;
+        width: 40%;
+        padding-right: 10px;
+        white-space: nowrap;
+        color: $dark;
+      }
+      &:nth-of-type(1):before {
+        content: 'Имя:';
+      }
+      &:nth-of-type(2):before {
+        content: 'Фамилия:';
+      }
+      &:nth-of-type(3):before {
+        content: 'Стаж:';
+      }
+      &:nth-of-type(4):before {
+        content: 'Возраст:';
+      }
+      &:nth-of-type(5):before {
+        content: 'Адрес:';
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .card-wrapper {
+    display: block;
+
+    &__entry,
+    &__controls {
+      width: 400px;
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .card-wrapper {
+    display: flex;
+    &__entry,
+    &__controls {
+      width: 100px;
+
+      font-size: 14px;
+
+      &:nth-child(5) {
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-wrapper {
+    &__entry,
+    &__controls {
+      width: 180px;
+
+      font-size: 18px;
+
+      &:nth-child(5) {
+        width: 290px;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@ export default {
   <div class="form-wrapper">
     <div class="form-wrapper__header">
       <button class="form-wrapper__back" @click="$router.back">
-        <img src="/back-icon.svg" alt="" />
+        <img src="/back-icon.svg" alt="Иконка назад" />
       </button>
       <PageHeader pageTitle="Добавление сотрудника" />
     </div>
@@ -34,11 +34,43 @@ export default {
 
   &__back {
     position: absolute;
-    top: 30px;
-    left: 5%;
+    top: 45px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
 
     &:active {
       transform: translateX(-10px);
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .form-wrapper {
+    &__back {
+      left: 3%;
+      top: 40px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-wrapper {
+    &__back {
+      left: 5%;
+      top: 30px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }

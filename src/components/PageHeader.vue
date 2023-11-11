@@ -28,10 +28,35 @@ export default {
   padding: 20px 0;
 
   color: $dark;
-  font-size: 36px;
 
   background: $azure;
 
   box-shadow: 0 0 18px 2px $teal;
+
+  text-align: center;
+
+  h1 {
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header-wrapper {
+    font-size: 20px;
+
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header-wrapper {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-wrapper {
+    font-size: 36px;
+  }
 }
 </style>

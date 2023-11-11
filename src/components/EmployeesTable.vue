@@ -47,24 +47,64 @@ export default {
 
   border-radius: 15px;
 
-  background: #f2ebe9;
+  background: $input-background;
 
   &__head {
     display: flex;
   }
 
   &__head-title {
-    width: 180px;
-
-    font-size: 26px;
     line-height: 150%;
-
-    &:nth-child(1) {
-      padding-left: 10px;
-    }
 
     &:nth-child(5) {
       width: 290px;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .table-wrapper {
+    &__head-title {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .table-wrapper {
+    &__head-title {
+      position: static;
+      width: 100px;
+
+      font-size: 18px;
+
+      padding-left: 10px;
+
+      &:nth-child(5) {
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .table-wrapper {
+    &__head-title {
+      width: 180px;
+
+      font-size: 26px;
+
+      padding-left: 0;
+
+      &:first-child {
+        padding-left: 10px;
+      }
+
+      &:nth-child(5) {
+        width: 290px;
+      }
     }
   }
 }

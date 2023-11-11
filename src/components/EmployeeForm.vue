@@ -116,7 +116,6 @@ export default {
 
 <style lang="scss" scoped>
 .employee-form {
-  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -124,14 +123,12 @@ export default {
   padding: 20px 25px;
 
   border-radius: 10px;
-  background: #f2ebe9;
+  background: $input-background;
 
   &__inputs {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 24px;
 
     input {
       width: 65%;
@@ -140,10 +137,7 @@ export default {
       border: none;
       border-bottom: 2px solid $teal;
 
-      font-size: 18px;
-
       &::placeholder {
-        font-size: 18px;
         font-style: italic;
 
         opacity: 0.6;
@@ -172,6 +166,40 @@ export default {
 
     &:active {
       transform: translateY(4px);
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .employee-form {
+    width: 345px;
+
+    &__inputs {
+      font-size: 18px;
+
+      input {
+        font-size: 18px;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .employee-form {
+    width: 450px;
+
+    &__inputs {
+      font-size: 24px;
+
+      input {
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
