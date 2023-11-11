@@ -31,21 +31,6 @@ export default {};
     gap 0.2s,
     border-radius 0.4s;
 
-  &:hover {
-    gap: 10px;
-    padding-right: 10px;
-    border-radius: 25px;
-
-    span {
-      max-width: 300px;
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    transform: translateY(4px);
-  }
-
   img {
     width: 50px;
     height: 50px;
@@ -58,6 +43,25 @@ export default {};
     transition:
       max-width 0.3s,
       opacity 0.2s;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .button-wrapper {
+    &:hover {
+      gap: 10px;
+      padding-right: 10px;
+      border-radius: 25px;
+
+      span {
+        max-width: 300px;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      transform: translateY(4px);
+    }
   }
 }
 </style>
