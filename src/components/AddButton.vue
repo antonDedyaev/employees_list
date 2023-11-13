@@ -14,7 +14,7 @@ export default {};
   display: flex;
   align-items: center;
 
-  margin-top: 40px;
+  margin: 40px 0;
 
   font-size: 20px;
   line-height: 130%;
